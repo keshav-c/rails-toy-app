@@ -65,3 +65,31 @@ Things you may want to cover:
 3. What is the name of the view file for the user edit page?
 
     - It's `app/views/users/edit.html.erb`
+
+### Exercise set 3
+
+1. Create a new micropost, then use your browser’s HTML inspector to determine the CSS id for the text “Micropost was successfully created.” What happens when you refresh your browser?
+
+    - The id of the text is again `notice`. This is a part of the _show post_ view. On refresh, the `#notice` tag text content is empty. So no text is displayed.
+
+2. Try to create a micropost with empty content and no user id.
+
+    - _Micropost was successfully created._ In the index page, there is a micropost with no content and no user id.
+
+3. Try to create a micropost with over 140 characters of content
+
+    - _Micropost was successfully created._
+
+4. Destroy the microposts from the previous exercises.
+
+    - _Micropost was successfully destroyed._ for each destroyed micropost.
+
+### Exercise set 4
+
+1. Try to create a micropost with the same long content used in a previous exercise. How has the behavior changed?
+
+    - Recieved error notification: _Content is too long (maximum is 140 characters)_.
+
+2. Use your browser’s HTML inspector to determine the CSS id of the error message produced by the previous exercise.
+
+    - Errors are enumerated in an unordered list, which is inside a div with the id `error_explanation`. 
