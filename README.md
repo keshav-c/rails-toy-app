@@ -1,27 +1,6 @@
-# README
+# Toy App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project represents a step by step walkthrough of the second chapter of the [Rails Tutorial Book](https://www.railstutorial.org/book/frontmatter) by Michael Hartl. The following are my solutions to the exercises, included in the same chapter.
 
 ## Answers
 
