@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<h1>User Page</h1>
 <p>
   <strong>Name:</strong>
   <%= @user.name %>
@@ -12,3 +12,9 @@
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+
+<br>
+<h2>Posts by user</h2>
+<p>
+  <%= render partial: 'microposts/list', microposts: @microposts %>
+</p>
