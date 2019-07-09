@@ -97,3 +97,26 @@ Things you may want to cover:
 ### Exercise set 5
 
 1. Edit the user show page to display the content of the user’s first micropost. Confirm by visiting /users/1 that it worked.
+
+    - Move the code from the view used to display all microposts to a partial, `_list.html.erb`, in order to be able to reuse the listing code. Render all microposts in the original _index_ view, using this partial.
+    - In the _users_ controller, modify the `show` action to set the `@microposts` instance variable to all posts corresponding to the user being shown.
+    - In the _users_'s _show_ view, list the user's microposts by referring to the `users/list` partial, and passing to it, the `@microposts` instance variable, that was set in the `show` action
+
+2. Add a validation for the presence of micropost content in order to ensure that microposts can’t be blank. Verify that you get the desired behavior.
+
+    - Add `presence: true` key-value pair to the arguments passed to `validates` method invoked in _micropost.rb_ model.
+    - Error "Content can't be blank" shown for creating empty micropost
+
+3. Validate the presence of name and email attributes in the User model.
+
+    - invoke `validates` method for each _attribute symbol_ using the key-value pair, `presence: true`.
+
+### Exercise set 6
+
+1. By examining the contents of the Application controller file, find the line that causes `ApplicationController` to inherit from `ActionController::Base`.
+
+    - This would be the line declaring the beginning of the `ApplicationController` class: `class ApplicationController < ActionController::Base`. This class is defined in the <em>app/controllers/application_controller.rb</em> file 
+
+2. Is there an analogous file containing a line where `ApplicationRecord` inherits from `ActiveRecord::Base`?
+
+    - That would be the <em>app/models/application_record.rb</em> file where the `ApplicationRecord` class is defined.
