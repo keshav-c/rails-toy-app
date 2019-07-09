@@ -120,3 +120,13 @@ Things you may want to cover:
 2. Is there an analogous file containing a line where `ApplicationRecord` inherits from `ActiveRecord::Base`?
 
     - That would be the <em>app/models/application_record.rb</em> file where the `ApplicationRecord` class is defined.
+
+### Extra
+
+1. Deploy app to heroku after committing all changes, using
+
+        git push heroku
+        heroku run rails db:migrate
+        heroku open
+
+2. Play around with the production toy app, and check if validation works.
