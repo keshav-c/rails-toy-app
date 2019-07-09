@@ -92,4 +92,8 @@ Things you may want to cover:
 
 2. Use your browser’s HTML inspector to determine the CSS id of the error message produced by the previous exercise.
 
-    - Errors are enumerated in an unordered list, which is inside a div with the id `error_explanation`. 
+    - Errors are enumerated in an unordered list, which is inside a div with the id `error_explanation`.
+
+### Exercise set 5
+
+1. Edit the user show page to display the content of the user’s first micropost. Confirm by visiting /users/1 that it worked.
